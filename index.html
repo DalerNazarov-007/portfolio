@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Daler Nazarov – Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: url('./photo_2025-07-23_06-15-33.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #edf2fb;
+      position: relative;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(13, 27, 42, 0.85);
+      z-index: -1;
+    }
+
+    header {
+      text-align: center;
+      padding: 3rem 1rem 1rem;
+    }
+
+    .profile-pic {
+      width: 130px;
+      height: 130px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #a2c4ff;
+      margin-bottom: 1rem;
+    }
+
+    header h1 {
+      margin: 0.5rem 0 0;
+      font-size: 2.4rem;
+      color: #a2c4ff;
+    }
+
+    header h2 {
+      margin: 0;
+      font-weight: 400;
+      color: #cbd9e3;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    section {
+      margin-bottom: 2rem;
+      background-color: rgba(27, 38, 59, 0.7);
+      padding: 1.5rem;
+      border-radius: 10px;
+    }
+
+    h2 {
+      color: #a8bcd1;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .skills-list li, .project-list li {
+      background-color: #0d1b2a;
+      color: #a8bcd1;
+      padding: 0.8rem 1.2rem;
+      margin-bottom: 0.6rem;
+      border-radius: 6px;
+      font-size: 1rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .project-list li a {
+      color: #a2c4ff;
+      text-decoration: none;
+      margin-left: 0.5rem;
+      font-size: 0.95rem;
+    }
+
+    .project-list li a:hover {
+      text-decoration: underline;
+    }
+
+    .hobby-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.7rem;
+    }
+
+    .hobby-item {
+      background-color: #1e3a5f;
+      color: #a8bcd1;
+      padding: 0.6rem 1rem;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      font-size: 0.95rem;
+      transition: background 0.2s;
+    }
+
+    .hobby-item:hover {
+      background-color: #2b425c;
+    }
+
+    .hobby-item span {
+      margin-right: 0.6rem;
+      font-size: 1.2rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      color: #cbd9e3;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="./photo_2024-09-28_12-23-07.jpg" alt="Profile Picture" class="profile-pic">
+    <h1>Daler Nazarov</h1>
+    <h2>Web Developer | Backend Engineer</h2>
+  </header>
+
+  <div class="container">
+    <section>
+      <h2>About Me</h2>
+      <p>I am from Uzbekistan. I’m a backend developer and a student at TSUE. I enjoy building fast, scalable, and well-documented backend applications using modern technologies.</p>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>JavaScript</li>
+        <li>TypeScript</li>
+        <li>HTML & CSS</li>
+        <li>Node.js</li>
+        <li>NestJS</li>
+        <li>PostgreSQL</li>
+        <li>MongoDB</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <ul class="project-list">
+        <li><strong>E-commerce Website</strong> – Product catalog, cart, admin panel  
+          <a href="https://github.com/FazliddinAU/FDOteam.git" target="_blank">View Project</a>
+        </li>
+        <li><strong>Account Balance App</strong> – Track transactions and balances  
+          <a href="https://github.com/DalerNazarov-007/account_balance_exam.git" target="_blank">View Project</a>
+        </li>
+        <li><strong>RESTful API</strong> – Auth + full CRUD operations  
+          <a href="https://github.com/DalerNazarov-007/CRUD_nest.git" target="_blank">View Project</a>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Hobbies</h2>
+      <ul class="hobby-list">
+        <li class="hobby-item"><span>📚</span>Reading tech blogs</li>
+        <li class="hobby-item"><span>💻</span>Building side projects</li>
+        <li class="hobby-item"><span>🎮</span>Gaming & problem solving</li>
+        <li class="hobby-item"><span>🎧</span>Listening to podcasts</li>
+        <li class="hobby-item"><span>🌐</span>Exploring new tools</li>
+      </ul>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 Daler Nazarov — All rights reserved.
+  </footer>
+</body>
+</html>
